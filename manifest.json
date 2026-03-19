@@ -1,0 +1,22 @@
+{
+  "name": "gels_adne",
+  "short_name": "gels_adne",
+  "description": "Uñas y belleza - Tu espacio de cuidado personal",
+  "start_url": "/gels_adne/",
+  "scope": "/gels_adne/",
+  "display": "standalone",
+  "background_color": "#ec4899",
+  "theme_color": "#ec4899",
+  "icons": [
+    {
+      "src": "/gels_adne/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/gels_adne/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
