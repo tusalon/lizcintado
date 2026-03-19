@@ -1,12 +1,12 @@
 // utils/config-negocio.js - VERSIÓN MULTI-TENANT CORREGIDA
-// CLIENTE: gels_adne
+// CLIENTE: LizCintado Manicure y Pedicure
 
 console.log('🏢 config-negocio.js cargado');
 
 // ============================================
 // 🔥 CONFIGURACIÓN POR CLIENTE - ¡LO ÚNICO QUE CAMBIA!
 // ============================================
-const NEGOCIO_ID_POR_DEFECTO = 'b9f9f52e-9bce-43f9-a96c-2c4d1c3f50d5'; // ID de gels_adne
+const NEGOCIO_ID_POR_DEFECTO = 'f63ba471-fb31-4249-9611-1fe7b8f0ad22'; // ID de LizCintado Manicure y Pedicure
 
 // Hacer accesible globalmente
 window.NEGOCIO_ID_POR_DEFECTO = NEGOCIO_ID_POR_DEFECTO;
@@ -116,7 +116,7 @@ window.cargarConfiguracionNegocio = async function(forceRefresh = false) {
  */
 window.getNombreNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.nombre || 'gels_adne';
+    return config?.nombre || 'LizCintado Manicure y Pedicure';
 };
 
 /**
@@ -124,7 +124,7 @@ window.getNombreNegocio = async function() {
  */
 window.getTelefonoDuenno = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.telefono || '53691521';
+    return config?.telefono || '56886503';
 };
 
 /**
@@ -132,7 +132,7 @@ window.getTelefonoDuenno = async function() {
  */
 window.getEmailNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.email || 'adnety70@gmail.com';
+    return config?.email || 'lizcintado2005@gmail.com';
 };
 
 /**
@@ -164,7 +164,7 @@ window.getHorarioAtencion = async function() {
  */
 window.getMensajeBienvenida = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.mensaje_bienvenida || '¡Bienvenida a gels_adne!';
+    return config?.mensaje_bienvenida || '¡Bienvenida a LizCintado Manicure y Pedicure!';
 };
 
 /**
@@ -180,7 +180,7 @@ window.getMensajeConfirmacion = async function() {
  */
 window.getNtfyTopic = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.ntfy_topic || 'gels-adne';
+    return config?.ntfy_topic || 'lizcintado';
 };
 
 /**
@@ -205,5 +205,5 @@ setTimeout(async () => {
     await window.cargarConfiguracionNegocio();
 }, 500);
 
-console.log('✅ config-negocio.js listo para gels_adne');
+console.log('✅ config-negocio.js listo para LizCintado Manicure y Pedicure');
 console.log('🏷️  ID configurado:', NEGOCIO_ID_POR_DEFECTO);

@@ -1,22 +1,22 @@
-// sw.js - Service Worker para gels_adne
+// sw.js - Service Worker para LizCintado Manicure y Pedicure
 
-const CACHE_NAME = 'gels-adne-v1';
+const CACHE_NAME = 'lizcintado-v1';
 const urlsToCache = [
-  '/gels_adne/',
-  '/gels_adne/index.html',
-  '/gels_adne/admin.html',
-  '/gels_adne/admin-login.html',
-  '/gels_adne/setup-wizard.html',
-  '/gels_adne/editar-negocio.html',
-  '/gels_adne/manifest.json',
-  '/gels_adne/icons/icon-72x72.png',
-  '/gels_adne/icons/icon-96x96.png',
-  '/gels_adne/icons/icon-128x128.png',
-  '/gels_adne/icons/icon-144x144.png',
-  '/gels_adne/icons/icon-152x152.png',
-  '/gels_adne/icons/icon-192x192.png',
-  '/gels_adne/icons/icon-384x384.png',
-  '/gels_adne/icons/icon-512x512.png'
+  '/lizcintado/',
+  '/lizcintado/index.html',
+  '/lizcintado/admin.html',
+  '/lizcintado/admin-login.html',
+  '/lizcintado/setup-wizard.html',
+  '/lizcintado/editar-negocio.html',
+  '/lizcintado/manifest.json',
+  '/lizcintado/icons/icon-72x72.png',
+  '/lizcintado/icons/icon-96x96.png',
+  '/lizcintado/icons/icon-128x128.png',
+  '/lizcintado/icons/icon-144x144.png',
+  '/lizcintado/icons/icon-152x152.png',
+  '/lizcintado/icons/icon-192x192.png',
+  '/lizcintado/icons/icon-384x384.png',
+  '/lizcintado/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/gels_adne/icons/icon-192x192.png');
+            return caches.match('/lizcintado/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para gels_adne');
+console.log('✅ Service Worker configurado para LizCintado Manicure y Pedicure');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);

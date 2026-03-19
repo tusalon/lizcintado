@@ -1,20 +1,20 @@
 {
-  "name": "gels_adne",
-  "short_name": "gels_adne",
-  "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/gels_adne/",
-  "scope": "/gels_adne/",
+  "name": "LizCintado Manicure y Pedicure",
+  "short_name": "LizCintado",
+  "description": "Manicure y Pedicure - Tu espacio de cuidado personal",
+  "start_url": "/lizcintado/",
+  "scope": "/lizcintado/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/gels_adne/icons/icon-192x192.png",
+      "src": "/lizcintado/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/gels_adne/icons/icon-512x512.png",
+      "src": "/lizcintado/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
